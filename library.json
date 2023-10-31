@@ -1,0 +1,87 @@
+{
+    "knihy": [
+      {
+        "id": 1,
+        "name": "Vládca Prsteňov",
+        "author": "J.R.R. Tolkien",
+        "bookBorrowed": false,
+        "userBorrowed": null,
+        "dateBorrow": null,
+        "dateReturn": null
+      },
+      {
+        "id": 2,
+        "name": "Harry Potter a Kameň mudrcov",
+        "author": "J.K. Rowling",
+        "bookBorrowed": false,
+        "userBorrowed": null,
+        "dateBorrow": null,
+        "dateReturn": null
+      },
+      {
+        "id": 3,
+        "name": "Vykúpenie z väznice Shawshank",
+        "author": "Stephen King",
+        "bookBorrowed": false,
+        "userBorrowed": null,
+        "dateBorrow": null,
+        "dateReturn": null
+      },
+      {
+        "id": 4,
+        "name": "Malý princ",
+        "author": "Antoine de Saint-Exupéry",
+        "bookBorrowed": false,
+        "userBorrowed": null,
+        "dateBorrow": null,
+        "dateReturn": null
+      },
+      {
+        "id": 5,
+        "name": "Pocahontas",
+        "author": "Walt Disney",
+        "bookBorrowed": false,
+        "userBorrowed": null,
+        "dateBorrow": null,
+        "dateReturn": null
+      }
+    ],
+    
+    "uzivatelia": [
+      {
+        "id": 1,
+        "personalId": 123,
+        "firstName": "Jozef",
+        "lastName": "Novák",
+        "dateOfBirth": "1992-04-23"
+      },
+      {
+        "id": 2,
+        "personalId": 456,
+        "firstName": "Eva",
+        "lastName": "Malá",
+        "dateOfBirth": "1987-02-13"
+      },
+      {
+        "id": 3,
+        "personalId": 789,
+        "firstName": "Viera",
+        "lastName": "Starostlivá",
+        "dateOfBirth": "1959-12-01"
+      },
+      {
+        "id": 4,
+        "personalId": 987,
+        "firstName": "Ján",
+        "lastName": "Múdry",
+        "dateOfBirth": "1989-09-07"
+      },
+      {
+        "id": 5,
+        "personalId": 654,
+        "firstName": "Michal",
+        "lastName": "Slobodný",
+        "dateOfBirth": "1987-10-10"
+      }
+    ]
+  }

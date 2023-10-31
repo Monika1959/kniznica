@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knihy</title>
+  <link rel="stylesheet" href="css/books.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <div class="logo">
+          <span>
+            <a href="index.html" class="nav-link"><h1>Knižnica</h1></a>
+          </span>
+      </div>
+        
+      </div>
+      <ul class="navbar-nav">
+        <li><a href="books.html" class="nav-link">Knihy</a></li>
+        <li><a href="members.html" class="nav-link">Čitatelia</a></li>
+        <li><a href="rentals.html" class="nav-link">Zapožičanie</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <main>
+      <div class="container">
+        <div class="titles">
+          <div>
+            <h1>Knihy</h1>
+            <table id="bookTab" class="table">
+              <thead>
+                <tr>
+                  <th>Názov titulu</th>
+                  <th>Meno autora</th>
+                  <th>Status</th>
+                  <th>Akcia</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <div id="bookForm" class="formular" style="display: block">
+            <input type="hidden" id="bookIndex" value="">
+            <input type="text" id="nameInput" placeholder="Názov" />
+            <input type="text" id="authorInput" placeholder="Meno autora" />
+            <button type="submit" id="buttonBook" onclick="addBook()">Uložiť</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <footer>
+      <p>&copy; Monika´s Library</p>
+    </footer>
+
+    <script src="js/books.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Hlavička */
+
+header {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+  
+.navbar-brand a {
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+  
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+  
+.navbar-nav li {
+  margin-right: 10px;
+}
+  
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+  
+.nav-link:hover {
+  color: #90bbd4;
+}
+ 
+/* Telo */
+
+main{
+    padding-bottom: 45px;
+}
+
+.slider{
+    overflow: hidden;
+    width: 100%;
+    height: 630px; 
+    margin: 0 auto;
+}
+
+.images{
+    position: relative;
+    width: 300%;
+    margin: 0;
+    left: 0;
+    animation: slider 20s infinite;
+}
+
+.images div{
+    width: 33.3333%;
+    float: left;
+    height: 630px;
+}
+
+.first-img{
+    background-image: url(../img/reading.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.second-img{
+    background-image: url(../img/library.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.third-img{
+    background-image: url(../img/book.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes slider {
+    0%{
+        left: 0;
+    }
+    10%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    35%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    75%{
+        left: -200%;
+    }
+    90%{
+        left: 0;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+/* Footer */
+
+footer{
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #69b4ff7c;
+  font-size: large;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  color: #575656;
+}
+

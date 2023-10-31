@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Čitatelia</title>
+  <link rel="stylesheet" href="css/members.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <div class="logo">
+          <span>
+            <a href="index.html" class="nav-link"><h1>Knižnica</h1></a>
+          </span>
+      </div>
+        
+      </div>
+      <ul class="navbar-nav">
+        <li><a href="books.html" class="nav-link">Knihy</a></li>
+        <li><a href="members.html" class="nav-link">Čitatelia</a></li>
+        <li><a href="rentals.html" class="nav-link">Zapožičanie</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <main>
+      <div class="div">
+        <div>
+          <h1>Čitatelia</h1>
+          <table id="tabulkaClenov" class="table">
+            <thead>
+              <tr>
+                <th>Meno</th>
+                <th>Priezvisko</th>
+                <th>Číslo OP</th>
+                <th>Dátum narodenia</th>
+                <th>Uprav/Vymaž</th>
+              </tr>
+            </thead>
+            <tbody id="zoznamClenov"></tbody>
+          </table>
+        </div>
+    
+        <div id="formularClenov" class="formular" style="display: block;">
+          <input type="hidden" id="memberIndex" value="">
+          <input type="text" name="firstName" id="firstNameInput" placeholder="Meno" />
+          <input type="text" name="lastName" id="lastNameInput" placeholder="Priezvisko" />
+          <input type="number" name="personalId" id="documentNumberInput" placeholder="Číslo OP" />
+          <input type="date" name="dateOfBirth" id="birthDateInput" placeholder="Dátum narodenia" />
+          <button type="submit" id="Button" onclick="addMember()">Uložit</button>
+        </div>
+      </div>
+    </main>
+    
+    <footer>
+      <p>&copy; Monika´s Library</p>
+    </footer>
+
+    <script src="js/members.js"></script>
+    
+</body>
+</html>
